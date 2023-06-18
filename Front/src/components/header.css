@@ -1,0 +1,283 @@
+body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 1.2rem);
+    height: 203px;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background: #FAF9F6;
+}
+
+.logo {
+    position: absolute;
+    left: 47%;
+    top: 1.25rem;
+    width: 132px;
+    height: 94px;
+
+}
+
+.group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 250px;
+    height: 30px;
+    position: absolute;
+    right: 1.5rem;
+    top: 7rem;
+}
+
+.menuButton {
+    width: 28px;
+    height: 28px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    width: calc(100vw - 1.2rem);
+    height: 50px;
+    top: 9.5rem;
+}
+
+nav .popover button:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    appearance: none;
+    border-style: none;
+    background: none;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1C2329;
+}
+
+p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: #1C2329;
+}
+
+.search-container {
+    width: 15rem;
+    height: 40px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+#search-bar {
+    width: 100%;
+    height: 40px;
+    padding: 0 12px;
+    font-size: 0.65rem;
+    border: 1px solid #E5E3DC;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+    outline: none;
+}
+
+#search-bar:focus {
+    border: 1px solid #F68F56;
+    transition: 0.35s ease;
+    color: #1C2329;
+}
+
+#search-bar:focus::-webkit-input-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+#search-bar:focus::-moz-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+#search-bar:focus:-ms-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+.search-button {
+    display: flex;
+    position: relative;
+    float: right;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: #F68F56;
+    top: -2rem;
+    right: 0.75rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.popover {
+    position: relative;
+    display: grid;
+    place-items: center;
+    height: 3.5rem;
+}
+
+.popover>button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 5.5rem;
+    height: 30px;
+    transition: 0.2s;
+}
+
+header .group .popover button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75rem;
+}
+
+.menu>button {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    color: #1c2329;
+    font-size: 1rem;
+    line-height: 36px;
+    text-align: start;
+}
+
+.popover>button::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    scale: 0.25;
+    opacity: 0;
+    background: whitesmoke;
+    transition: 0.2s;
+}
+
+.menu {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 3rem;
+    right: -1.25rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content;
+    width: 200px;
+    max-height: 450px;
+    padding: 0.50rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.menu-tienda {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 3rem;
+    left: -1.25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: max-content;
+    width: 600px;
+    max-height: 550px;
+    padding: 0.50rem;
+    background: white;
+    border-radius: 8px;
+    border: 1px solid #ebebeb;
+    box-shadow: 0 0 10px rgb(0 0 0 / 8%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.menu-tienda div:nth-child(n) {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.menu-tienda div>h2 {
+    font-family: 'Poppins';
+    font-weight: bolder;
+    line-height: 27px;
+    color: #1c2329;
+}
+
+.menu-tienda div>a {
+    font-family: 'Poppins';
+    font-size: 0.75rem;
+    font-weight: lighter;
+    line-height: 21px;
+}
+
+.menu button:nth-child(1) {
+    display: flex;
+    line-height: 12px;
+}
+
+#user-avatar {
+    display: flex;
+    place-items: center;
+    width: 45px;
+    height: 45px;
+}
+
+#user-profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 0.65rem;
+    height: 45px;
+}
+
+#user-mail {
+    font-size: 0.75rem;
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #a1a1a1;
+}
+
+.popover:hover>button::before {
+    scale: 1;
+    opacity: 1;
+}
+
+.popover:hover>.menu,
+.popover:hover>.menu-tienda {
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+}

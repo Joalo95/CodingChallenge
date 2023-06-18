@@ -1,0 +1,226 @@
+.sale-module{
+    min-height: 100vh;
+    /* FLEX */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.sale-module .title{
+    font-size: 1.3rem;
+    margin: -1rem 0 2rem;
+}
+
+.category-selection, .product-description, .add-picture, .confirmation{
+    width: 100%;
+    height: 53vh;
+    /* FLEX */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+.category-selection{
+    margin: 4rem;
+    font-size: 1.3rem;
+    max-height: 100vh;
+}
+
+.category-selection select{
+    width: 30%;
+    margin: 1.5rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid #A1A1A1;
+    border-radius: 10px;
+}
+
+.product-description{
+    margin: 4rem;
+    font-size: 1.1rem;
+    max-height: 100vh;
+}
+
+.product-description p{
+    margin-bottom: 1.5rem;
+}
+
+.product-description form{
+    width: 29%;
+    margin-top: -1rem;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.product-description input, .product-description select{
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border: 1px solid #1C2329;
+    border-radius: 10px;
+}
+
+.product-description span{
+    margin-left:0.3rem;
+    font-size: 0.9rem;
+    color: gray;
+    align-self: flex-start;
+}
+
+.product-description div{
+    width: 100%;
+    /* FLEX */
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-description .color-size{
+    width: 48%;
+    /* FLEX */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-description div input, .product-description div select{
+    width: 100%;
+}
+.product-description label{
+    width: 100%;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-description button{
+    border: 1px solid #1C2329;
+    border-radius: 26px;
+    width: 30%;
+    padding: 0.3rem 0;
+}
+
+.product-description .btSelected{
+    background-color: #FFBC6D;
+}
+
+#pd-sex{
+    width: 100%;
+}
+
+
+.add-picture{
+    margin: 4rem;
+    font-size: 1.3rem;
+}
+    
+.add-picture .ap-div{
+    width: 15%;
+    margin-top: 2rem;
+    padding: 3.5rem 0 1.5rem;
+    aspect-ratio: 1/1;
+    border: 1px solid wheat;
+    border-radius: 26px;
+    background-color: #edebe74d;
+    box-shadow: 1px 6px 4px 3px rgba(0, 0, 0, 0.4);
+    /* FLEX */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.add-picture img{
+    width: 40%;
+}
+
+.add-picture input{
+    display: none;
+}
+
+.add-picture label{
+    color: white;
+    cursor: pointer;
+    margin-top: 2rem;
+    border: 1px solid white;
+    padding: 0.2rem 1rem;
+    border-radius: 26px;
+    background-color: #425362;
+    /* FLEX */
+        display: flex;
+        align-items: center;
+}
+
+.add-picture label img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.confirmation{
+    margin: 4rem;
+    font-size: 1.3rem;
+}
+
+.confirmation   p{
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.confirmation div{
+    text-align: left;
+}
+
+.confirmation strong{
+    margin-bottom: 1rem;
+}
+
+.confirmation label{
+    color:rgba(0, 0, 0, 0.6);
+    font-size: 1.1rem;
+}
+
+.confirmation .confirmation-data{
+    /* FLEX */
+        display: flex;
+        justify-content: space-between;
+}
+
+.confirmation input{
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid black ;
+    background-color: #ffffff00;
+}
+
+.confirmation .clothes-data{
+    width: 40%;
+    padding: 2em;
+    /* FLEX */
+        display: flex;
+        flex-direction: column;
+}
+
+.confirmation .clothes-data div{
+    /* FLEX */
+        display: flex;
+}
+
+.confirmation .clothes-data div div{
+    /* FLEX */
+        flex-direction: column;
+}
+
+.confirmation .clothes-data div input{
+    width: 80%;
+}
+
+.confirmation .contact-data{
+    width: 40%;
+    padding: 2em;
+    background-color: #F5F4F1;
+    border-radius: 16px;
+    /* FLEX */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+}

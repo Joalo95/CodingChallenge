@@ -1,0 +1,67 @@
+.back-forward{
+    /* position: absolute;
+    bottom: 20%; */
+    width: 100%;
+    border: 0px solid black;
+        /* FLEX */
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+}
+
+.back-forward button{
+    width: 11.7%;
+    padding: 0.5rem 0;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.back-forward button:last-child{
+    background-color: #FFBC6D;
+}
+
+.added-images{
+    width: 80%;
+    margin-top: 2rem;
+    /* FLEX */
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+}
+
+.added-images div{
+    width: 15%;
+    padding: 0.2rem;
+    aspect-ratio: 1/1;
+    border: 2px dashed black;
+    border-radius: 16px;
+    /* FLEX */
+        display: flex;
+        justify-content: center;
+}
+
+.added-images div img{
+    width: 100%;
+    object-fit: cover;   
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.added-images div img:hover{
+    opacity: 0.7;
+}
+
+.added-images div label{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    margin-top: 0px;
+    /* FLEX */
+        display: flex;
+        justify-content: center;
+        align-self: center;
+}
+
+.added-images div label:hover{
+    box-shadow: 0px 0px 5px black;
+}

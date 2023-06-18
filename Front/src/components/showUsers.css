@@ -1,0 +1,13 @@
+.profile-container {
+  width: 90svw;
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  border: 1px solid #000000;
+}
+
+.profile-container p {
+  width: 18vw;
+  text-align: left;
+}
